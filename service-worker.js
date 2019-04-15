@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/kalash14/rick-and-morty-react-app/precache-manifest.660131ee29b34f77f2095502d6b0d8bf.js"
+  "/rick-and-morty-react-app/precache-manifest.183f93874d4f51b15c3b9b0ba829a950.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/kalash14/rick-and-morty-react-app/index.html", {
+workbox.routing.registerNavigationRoute("/rick-and-morty-react-app/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
