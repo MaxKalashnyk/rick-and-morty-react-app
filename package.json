@@ -2,7 +2,7 @@
     "name": "kottans-react-app",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://github.com/kalash14/rick-and-morty-react-app",
+    "homepage": "https://kalash14.github.io/rick-and-morty-react-app/",
     "dependencies": {
         "gh-pages": "^2.0.1",
         "react": "^16.8.6",
