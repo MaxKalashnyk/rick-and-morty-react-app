@@ -1,33 +1,77 @@
-.App {
-  text-align: center;
+/* my color palette variables */
+
+:root {
+    --text-color: #222f3e;
+    --section-color: #54a0ff;
+    --border-color: #c8d6e5;
+    --custom-red: #ff6b6b;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+/* basic reset */
+
+* {
+    box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+html,
+body {
+    margin: 0;
+    padding: 0;
 }
 
-.App-link {
-  color: #61dafb;
+html {
+    font-size: 14px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+    font-weight: normal;
+    font-style: normal;
+    color: var(--text-color);
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure {
+    margin: 0;
+}
+
+section {
+    font-size: 1rem;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+a:active,
+a:focus,
+a:visited {
+    color: var(--text-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    line-height: 1.5;
 }

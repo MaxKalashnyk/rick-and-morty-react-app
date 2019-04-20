@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import { getCharactersList } from "./api";
-import CharacterList from "./Components/characters-list/CharacterList";
+import CharacterList from "./Components/CharacterList/CharacterList";
 
 class App extends Component {
     state = {
@@ -18,7 +18,20 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <CharacterList characters={this.state.charactersList} />
+                <div className="container-fluid">
+                    <div className="row">
+                        <div className="col-md-3">
+                            <aside>hey</aside>
+                        </div>
+                        <div className="col-md-9">
+                            <main>
+                                <CharacterList
+                                    characters={this.state.charactersList}
+                                />
+                            </main>
+                        </div>
+                    </div>
+                </div>
             </div>
         );
     }

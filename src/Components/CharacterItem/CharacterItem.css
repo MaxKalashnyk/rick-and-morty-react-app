@@ -1,0 +1,26 @@
+.character-item {
+    text-align: center;
+}
+
+.character-item__title {
+    font-size: 1.5em;
+    margin-bottom: 1.5rem;
+}
+
+.item-thumb-wrap {
+    width: 128px;
+    height: 128px;
+    margin: 0 auto 1em;
+    overflow: hidden;
+}
+.item-thumb-image {
+    border-radius: 50%;
+}
+
+.thumb-male .item-thumb-image {
+    border: 2px solid var(--section-color);
+}
+
+.thumb-female .item-thumb-image {
+    border: 2px solid var(--custom-red);
+}
