@@ -1,13 +1,15 @@
 {
-  "main.css": "/rick-and-morty-react-app/static/css/main.e84f2940.chunk.css",
-  "main.js": "/rick-and-morty-react-app/static/js/main.d0040e02.chunk.js",
-  "main.js.map": "/rick-and-morty-react-app/static/js/main.d0040e02.chunk.js.map",
-  "runtime~main.js": "/rick-and-morty-react-app/static/js/runtime~main.e26083da.js",
-  "runtime~main.js.map": "/rick-and-morty-react-app/static/js/runtime~main.e26083da.js.map",
-  "static/js/2.66773f37.chunk.js": "/rick-and-morty-react-app/static/js/2.66773f37.chunk.js",
-  "static/js/2.66773f37.chunk.js.map": "/rick-and-morty-react-app/static/js/2.66773f37.chunk.js.map",
+  "main.css": "/rick-and-morty-react-app/static/css/main.4d633e81.chunk.css",
+  "main.js": "/rick-and-morty-react-app/static/js/main.66e68ed0.chunk.js",
+  "main.js.map": "/rick-and-morty-react-app/static/js/main.66e68ed0.chunk.js.map",
+  "runtime~main.js": "/rick-and-morty-react-app/static/js/runtime~main.bfdb34e0.js",
+  "runtime~main.js.map": "/rick-and-morty-react-app/static/js/runtime~main.bfdb34e0.js.map",
+  "static/css/2.5eadbc93.chunk.css": "/rick-and-morty-react-app/static/css/2.5eadbc93.chunk.css",
+  "static/js/2.3a6459a4.chunk.js": "/rick-and-morty-react-app/static/js/2.3a6459a4.chunk.js",
+  "static/js/2.3a6459a4.chunk.js.map": "/rick-and-morty-react-app/static/js/2.3a6459a4.chunk.js.map",
   "index.html": "/rick-and-morty-react-app/index.html",
-  "precache-manifest.183f93874d4f51b15c3b9b0ba829a950.js": "/rick-and-morty-react-app/precache-manifest.183f93874d4f51b15c3b9b0ba829a950.js",
+  "precache-manifest.595db354c0eac00b9fb6c32acb635170.js": "/rick-and-morty-react-app/precache-manifest.595db354c0eac00b9fb6c32acb635170.js",
   "service-worker.js": "/rick-and-morty-react-app/service-worker.js",
-  "static/css/main.e84f2940.chunk.css.map": "/rick-and-morty-react-app/static/css/main.e84f2940.chunk.css.map"
+  "static/css/2.5eadbc93.chunk.css.map": "/rick-and-morty-react-app/static/css/2.5eadbc93.chunk.css.map",
+  "static/css/main.4d633e81.chunk.css.map": "/rick-and-morty-react-app/static/css/main.4d633e81.chunk.css.map"
 }
