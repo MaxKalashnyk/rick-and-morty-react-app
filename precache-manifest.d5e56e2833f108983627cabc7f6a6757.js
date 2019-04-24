@@ -4,15 +4,15 @@ self.__precacheManifest = [
     "url": "/rick-and-morty-react-app/static/js/runtime~main.bfdb34e0.js"
   },
   {
-    "revision": "08058f030b0fba484976",
-    "url": "/rick-and-morty-react-app/static/js/main.b316a2a4.chunk.js"
+    "revision": "d073df54e7e995d0acd7",
+    "url": "/rick-and-morty-react-app/static/js/main.9a4dc574.chunk.js"
   },
   {
     "revision": "8ec1f6e213b69c7bfdaa",
     "url": "/rick-and-morty-react-app/static/js/2.3a6459a4.chunk.js"
   },
   {
-    "revision": "08058f030b0fba484976",
+    "revision": "d073df54e7e995d0acd7",
     "url": "/rick-and-morty-react-app/static/css/main.eaa5bc59.chunk.css"
   },
   {
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/rick-and-morty-react-app/static/css/2.5eadbc93.chunk.css"
   },
   {
-    "revision": "4edfb4b548c5dccfbc0de636880bc427",
+    "revision": "91e3eaaf7feaea08eb42832576c09668",
     "url": "/rick-and-morty-react-app/index.html"
   }
 ];
