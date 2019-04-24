@@ -10,7 +10,7 @@ export class SortingPanel extends Component {
                         All
                         <input
                             type="radio"
-                            name="sorting"
+                            name="gender"
                             className="filter-input"
                             id="gender-all-sort"
                         />
@@ -19,7 +19,7 @@ export class SortingPanel extends Component {
                         Male
                         <input
                             type="radio"
-                            name="sorting"
+                            name="gender"
                             className="filter-input"
                             id="gender-male-sort"
                         />
@@ -28,9 +28,18 @@ export class SortingPanel extends Component {
                         Female
                         <input
                             type="radio"
-                            name="sorting"
+                            name="gender"
                             className="filter-input"
                             id="gender-female-sort"
+                        />
+                    </label>
+                    <label htmlFor="gender-unknown-sort">
+                        Unknown
+                        <input
+                            type="radio"
+                            name="gender"
+                            className="filter-input"
+                            id="gender-unknown-sort"
                         />
                     </label>
                 </fieldset>

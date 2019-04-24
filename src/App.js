@@ -3,11 +3,14 @@ import "./App.css";
 import { getCharactersList } from "./api";
 import CharacterList from "./Components/CharacterList/CharacterList";
 import FilterPanel from "./Components/FilterPanel/FilterPanel";
+import { APIKeysObj } from "./constants";
 
 class App extends Component {
     state = {
         charactersList: [],
-        characterName: ""
+        characterName: "",
+        sortingNameParam: "",
+        gender: ""
     };
 
     async componentDidMount() {
@@ -30,13 +33,62 @@ class App extends Component {
         }
     };
 
-    render() {
-        const { charactersList, characterName } = this.state;
+    performFilteringByName = event => {
+        if (event.target.id === "name-asc") {
+            this.setState({
+                sortingNameParam: "asc"
+            });
+        } else if (event.target.id === "name-desc") {
+            this.setState({
+                sortingNameParam: "desc"
+            });
+        } else if (event.target.id === "gender-all-sort") {
+            this.setState({
+                gender: ""
+            });
+        } else if (event.target.id === "gender-female-sort") {
+            this.setState({
+                gender: APIKeysObj.genderFemale
+            });
+        } else if (event.target.id === "gender-male-sort") {
+            this.setState({
+                gender: APIKeysObj.genderMale
+            });
+        } else if (event.target.id === "gender-unknown-sort") {
+            this.setState({
+                gender: APIKeysObj.genderUnknown
+            });
+        }
+    };
 
-        const filteredList = charactersList.filter(character => {
+    render() {
+        const {
+            charactersList,
+            characterName,
+            sortingNameParam,
+            gender
+        } = this.state;
+
+        let filteredList = charactersList.filter(character => {
             const lowercasedItem = character.name.toLowerCase();
             return lowercasedItem.includes(characterName);
         });
+
+        if (sortingNameParam === "asc") {
+            filteredList = filteredList.sort(function(a, b) {
+                return a.name.localeCompare(b.name);
+            });
+        } else if (sortingNameParam === "desc") {
+            filteredList = filteredList.sort(function(a, b) {
+                return b.name.localeCompare(a.name);
+            });
+        }
+
+        if (gender !== "") {
+            filteredList = filteredList.filter(item => {
+                return item.gender === gender;
+            });
+        }
 
         return (
             <div className="App">
@@ -46,6 +98,7 @@ class App extends Component {
                             <aside>
                                 <FilterPanel
                                     handleSearch={this.performSearch}
+                                    handleFilter={this.performFilteringByName}
                                 />
                             </aside>
                         </div>
