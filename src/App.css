@@ -61,6 +61,7 @@ a {
 a:active {
     text-decoration: none;
 }
+
 a:active,
 a:focus,
 a:visited {
@@ -74,4 +75,22 @@ img {
 
 p {
     line-height: 1.5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+}
+
+.filter-panel {
+    flex-grow: 1;
+}
+
+.characters-panel {
+    flex-grow: 3;
 }

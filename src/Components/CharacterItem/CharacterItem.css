@@ -1,5 +1,6 @@
 .character-item {
     text-align: center;
+    flex: 0 1 33.33%;
 }
 
 .character-item__title {
@@ -13,6 +14,7 @@
     margin: 0 auto 1em;
     overflow: hidden;
 }
+
 .item-thumb-image {
     border-radius: 50%;
 }
