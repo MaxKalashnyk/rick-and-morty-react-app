@@ -4,6 +4,7 @@ import { getCharactersList } from "./api";
 import CharacterList from "./Components/CharacterList/CharacterList";
 import FilterPanel from "./Components/FilterPanel/FilterPanel";
 import { APIKeysObj } from "./constants";
+import Spinner from "./Components/Spinner/Spinner";
 
 class App extends Component {
     state = {
@@ -105,7 +106,9 @@ class App extends Component {
                         </div>
                         <div className="characters-panel">
                             <main>
-                                <CharacterList characters={filteredList} />
+                                <React.Suspense fallback={<Spinner />}>
+                                    <CharacterList characters={filteredList} />
+                                </React.Suspense>
                             </main>
                         </div>
                     </div>
