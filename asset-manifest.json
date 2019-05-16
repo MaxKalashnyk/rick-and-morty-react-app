@@ -1,13 +1,17 @@
 {
-  "main.css": "/rick-and-morty-react-app/static/css/main.a26b98b1.chunk.css",
-  "main.js": "/rick-and-morty-react-app/static/js/main.22fa016d.chunk.js",
-  "main.js.map": "/rick-and-morty-react-app/static/js/main.22fa016d.chunk.js.map",
-  "runtime~main.js": "/rick-and-morty-react-app/static/js/runtime~main.bfdb34e0.js",
-  "runtime~main.js.map": "/rick-and-morty-react-app/static/js/runtime~main.bfdb34e0.js.map",
-  "static/js/2.8e897289.chunk.js": "/rick-and-morty-react-app/static/js/2.8e897289.chunk.js",
-  "static/js/2.8e897289.chunk.js.map": "/rick-and-morty-react-app/static/js/2.8e897289.chunk.js.map",
+  "main.css": "/rick-and-morty-react-app/static/css/main.c8203913.chunk.css",
+  "main.js": "/rick-and-morty-react-app/static/js/main.d6868371.chunk.js",
+  "main.js.map": "/rick-and-morty-react-app/static/js/main.d6868371.chunk.js.map",
+  "runtime~main.js": "/rick-and-morty-react-app/static/js/runtime~main.d54b57a5.js",
+  "runtime~main.js.map": "/rick-and-morty-react-app/static/js/runtime~main.d54b57a5.js.map",
+  "static/js/2.66773f37.chunk.js": "/rick-and-morty-react-app/static/js/2.66773f37.chunk.js",
+  "static/js/2.66773f37.chunk.js.map": "/rick-and-morty-react-app/static/js/2.66773f37.chunk.js.map",
+  "static/css/3.b5b1c136.chunk.css": "/rick-and-morty-react-app/static/css/3.b5b1c136.chunk.css",
+  "static/js/3.1df3406d.chunk.js": "/rick-and-morty-react-app/static/js/3.1df3406d.chunk.js",
+  "static/js/3.1df3406d.chunk.js.map": "/rick-and-morty-react-app/static/js/3.1df3406d.chunk.js.map",
   "index.html": "/rick-and-morty-react-app/index.html",
-  "precache-manifest.570545eed1805b12b72ba96879aa1c21.js": "/rick-and-morty-react-app/precache-manifest.570545eed1805b12b72ba96879aa1c21.js",
+  "precache-manifest.5628efc9aeb4befecc4fc689f7f5abcc.js": "/rick-and-morty-react-app/precache-manifest.5628efc9aeb4befecc4fc689f7f5abcc.js",
   "service-worker.js": "/rick-and-morty-react-app/service-worker.js",
-  "static/css/main.a26b98b1.chunk.css.map": "/rick-and-morty-react-app/static/css/main.a26b98b1.chunk.css.map"
+  "static/css/3.b5b1c136.chunk.css.map": "/rick-and-morty-react-app/static/css/3.b5b1c136.chunk.css.map",
+  "static/css/main.c8203913.chunk.css.map": "/rick-and-morty-react-app/static/css/main.c8203913.chunk.css.map"
 }
