@@ -88,9 +88,11 @@ p {
 }
 
 .filter-panel {
+    max-width: 25%;
     flex-grow: 1;
 }
 
 .characters-panel {
+    max-width: 75%;
     flex-grow: 3;
 }
