@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import "../Spinner/Spinner.css";
+import "../Spinner/Spinner.scss";
 
 const Spinner = () => {
     return (

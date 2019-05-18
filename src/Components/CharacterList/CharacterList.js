@@ -3,7 +3,7 @@ import CharacterItem from "../CharacterItem/CharacterItem";
 // import { CHARACTERSCOUNT } from "../../constants";
 // import Pagination from "../Pagination/Pagination";
 // import { getCharactersList } from "../../api";
-import "./CharacterList.css";
+import "./CharacterList.scss";
 
 export class CharacterList extends Component {
     render() {
