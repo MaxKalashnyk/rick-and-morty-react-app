@@ -27,5 +27,4 @@ export const APIKeysObj = {
     genderUnknown: "unknown"
 };
 
-
 export const CHARACTERSCOUNT = 20;

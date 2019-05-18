@@ -121,7 +121,7 @@ class App extends Component {
                         path="/rick-and-morty-react-app/"
                         render={props => (
                             <Fragment>
-                                <div className="container">
+                                <div className="container main-content">
                                     <div className="row">
                                         <div className="filter-panel">
                                             <aside>

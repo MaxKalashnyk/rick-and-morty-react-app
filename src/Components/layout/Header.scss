@@ -1,0 +1,45 @@
+@import "../../scss/variables";
+
+.header {
+    text-align: center;
+    padding: 1em 0;
+    background: $customDark;
+}
+
+.main-title {
+    color: $customYellow;
+    margin-bottom: 1rem;
+}
+
+.main-navigation-list {
+    display: flex;
+    justify-content: center;
+}
+
+.main-navigation-list__item {
+    margin-right: 1em;
+    font-size: 1.25em;
+    &:last-child {
+        margin-right: 0;
+    }
+    a {
+        position: relative;
+        color: #fff !important;
+
+        &:after {
+            content: "";
+            bottom: -5px;
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: $customYellow;
+            opacity: 0;
+            transition: opacity 0.3s ease-in;
+        }
+    }
+    a.active {
+        &::after {
+            opacity: 1;
+        }
+    }
+}
