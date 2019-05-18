@@ -1,5 +1,5 @@
 {
-  "main.css": "/rick-and-morty-react-app/static/css/main.2aeae16c.chunk.css",
+  "main.css": "/rick-and-morty-react-app/static/css/main.069d070c.chunk.css",
   "main.js": "/rick-and-morty-react-app/static/js/main.d61a9438.chunk.js",
   "main.js.map": "/rick-and-morty-react-app/static/js/main.d61a9438.chunk.js.map",
   "runtime~main.js": "/rick-and-morty-react-app/static/js/runtime~main.0c476ec9.js",
@@ -10,8 +10,8 @@
   "static/js/3.2a82f448.chunk.js": "/rick-and-morty-react-app/static/js/3.2a82f448.chunk.js",
   "static/js/3.2a82f448.chunk.js.map": "/rick-and-morty-react-app/static/js/3.2a82f448.chunk.js.map",
   "index.html": "/rick-and-morty-react-app/index.html",
-  "precache-manifest.a24c6ced573de930ec0075e6ddcea03f.js": "/rick-and-morty-react-app/precache-manifest.a24c6ced573de930ec0075e6ddcea03f.js",
+  "precache-manifest.11d4c4f309fcebc4f11ccce5adbace44.js": "/rick-and-morty-react-app/precache-manifest.11d4c4f309fcebc4f11ccce5adbace44.js",
   "service-worker.js": "/rick-and-morty-react-app/service-worker.js",
   "static/css/3.fe6addbe.chunk.css.map": "/rick-and-morty-react-app/static/css/3.fe6addbe.chunk.css.map",
-  "static/css/main.2aeae16c.chunk.css.map": "/rick-and-morty-react-app/static/css/main.2aeae16c.chunk.css.map"
+  "static/css/main.069d070c.chunk.css.map": "/rick-and-morty-react-app/static/css/main.069d070c.chunk.css.map"
 }
