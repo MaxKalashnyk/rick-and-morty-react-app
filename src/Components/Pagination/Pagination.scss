@@ -23,7 +23,6 @@
         box-shadow: none !important;
         border-color: $base-color !important;
         color: saturate(darken($base-color, 30%), 10%);
-        font-weight: 900;
         font-size: 1rem;
 
         &:hover {

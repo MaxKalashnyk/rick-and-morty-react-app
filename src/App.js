@@ -1,10 +1,13 @@
-import React, { Component } from "react";
-import "./App.scss";
-import { getCharactersList } from "./api";
+import React, { Component, Fragment } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import FilterPanel from "./Components/FilterPanel/FilterPanel";
-import { APIKeysObj } from "./constants";
 import Spinner from "./Components/Spinner/Spinner";
 import Pagination from "./Components/Pagination/Pagination";
+import About from "./Components/pages/About";
+import Header from "./Components/layout/Header";
+import { getCharactersList } from "./api";
+import { APIKeysObj } from "./constants";
+import "./App.scss";
 
 class App extends Component {
     constructor() {
@@ -110,34 +113,61 @@ class App extends Component {
         );
 
         return (
-            <div className="App">
-                <div className="container">
-                    <div className="row">
-                        <div className="filter-panel">
-                            <aside>
-                                <FilterPanel
-                                    handleSearch={this.performSearch}
-                                    handleFilter={this.performFilteringByName}
-                                />
-                            </aside>
-                        </div>
-                        <div className="characters-panel">
-                            <main>
-                                <React.Suspense fallback={<Spinner />}>
-                                    <CharacterListComponent
-                                        characters={filteredList}
-                                    />
-                                    <Pagination
-                                        totalRecords={20}
-                                        pageNeighbours={1}
-                                        onPageChanged={this.onPageChanged}
-                                    />
-                                </React.Suspense>
-                            </main>
-                        </div>
-                    </div>
+            <Router>
+                <div className="App">
+                    <Header />
+                    <Route
+                        exact
+                        path="/rick-and-morty-react-app/"
+                        render={props => (
+                            <Fragment>
+                                <div className="container">
+                                    <div className="row">
+                                        <div className="filter-panel">
+                                            <aside>
+                                                <FilterPanel
+                                                    handleSearch={
+                                                        this.performSearch
+                                                    }
+                                                    handleFilter={
+                                                        this
+                                                            .performFilteringByName
+                                                    }
+                                                />
+                                            </aside>
+                                        </div>
+                                        <div className="characters-panel">
+                                            <main>
+                                                <React.Suspense
+                                                    fallback={<Spinner />}
+                                                >
+                                                    <CharacterListComponent
+                                                        characters={
+                                                            filteredList
+                                                        }
+                                                    />
+                                                    <Pagination
+                                                        totalRecords={20}
+                                                        pageNeighbours={1}
+                                                        onPageChanged={
+                                                            this.onPageChanged
+                                                        }
+                                                    />
+                                                </React.Suspense>
+                                            </main>
+                                        </div>
+                                    </div>
+                                </div>
+                            </Fragment>
+                        )}
+                    />
+
+                    <Route
+                        path="/rick-and-morty-react-app/about"
+                        component={About}
+                    />
                 </div>
-            </div>
+            </Router>
         );
     }
 }
