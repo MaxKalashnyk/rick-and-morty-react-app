@@ -11,7 +11,7 @@ export class FilterPanel extends Component {
                 onChange={this.props.handleFilter}
             >
                 <SearchBar />
-                <SortingPanel />
+                <SortingPanel resetHandler={this.props.handleResetFilter} />
             </form>
         );
     }

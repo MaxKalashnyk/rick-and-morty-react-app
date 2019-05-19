@@ -1,0 +1,78 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+
+.search-wrap {
+    margin-bottom: 1em;
+}
+
+.sorting-fieldset {
+    border: none;
+    margin: 0 0 2em;
+    padding: 0;
+}
+
+.sorting-legend {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 1em;
+}
+
+.sorting-label {
+    display: flex;
+    margin-bottom: 0.5em;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* radio buttons styling */
+
+.filter-input {
+    @include visuallyHidden();
+}
+
+.sorting-label-text {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    &:before {
+        content: "";
+        display: inline-block;
+        margin-right: 1em;
+        width: 1.5em;
+        height: 1.5em;
+        border: 1px solid $customYellow;
+        border-radius: 2px;
+        transition: border-color 0.3s ease-in;
+    }
+}
+
+.filter-input:checked + .sorting-label-text:before {
+    background: url("/images/check-box.svg") center no-repeat;
+    background-size: 100%;
+    border-color: transparent;
+}
+
+.filter-input:focus + .sorting-label-text:before {
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.filter-input:-moz-focusring + .sorting-label-text:before {
+    outline: 1px dotted;
+}
+
+.reset-filter-button {
+    cursor: pointer;
+    border: 2px solid $customYellow;
+    border-radius: 8px;
+    background-color: $customDark;
+    color: #fff;
+    font-size: 16px;
+    padding: 0.5em 1em;
+    font-family: inherit;
+    transition: background-color 0.3s ease-in;
+    &:hover {
+        background-color: rgba(32, 35, 41, 0.75);
+    }
+}

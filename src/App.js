@@ -12,6 +12,7 @@ import "./App.scss";
 class App extends Component {
     constructor() {
         super();
+        this.characterListCopy = [];
         this.onPageChanged = this.onPageChanged.bind(this);
     }
 
@@ -26,6 +27,7 @@ class App extends Component {
 
     async componentDidMount() {
         const charactersList = await getCharactersList();
+        this.characterListCopy = charactersList;
         this.setState({
             charactersList: charactersList
         });
@@ -72,10 +74,18 @@ class App extends Component {
         }
     };
 
+    performResetFilter = () => {
+        this.setState({
+            charactersList: this.characterListCopy,
+            characterName: "",
+            sortingNameParam: "",
+            gender: ""
+        });
+    };
+
     async onPageChanged(data) {
         const { currentPage } = data;
         const charactersList = await getCharactersList(currentPage);
-
         this.setState({ currentPage, charactersList });
     }
 
@@ -120,45 +130,43 @@ class App extends Component {
                         exact
                         path="/rick-and-morty-react-app/"
                         render={props => (
-                            <Fragment>
-                                <div className="container main-content">
-                                    <div className="row">
-                                        <div className="filter-panel">
-                                            <aside>
-                                                <FilterPanel
-                                                    handleSearch={
-                                                        this.performSearch
-                                                    }
-                                                    handleFilter={
-                                                        this
-                                                            .performFilteringByName
+                            <div className="container main-content">
+                                <div className="row">
+                                    <div className="filter-panel">
+                                        <aside>
+                                            <FilterPanel
+                                                handleSearch={
+                                                    this.performSearch
+                                                }
+                                                handleFilter={
+                                                    this.performFilteringByName
+                                                }
+                                                handleResetFilter={
+                                                    this.performResetFilter
+                                                }
+                                            />
+                                        </aside>
+                                    </div>
+                                    <div className="characters-panel">
+                                        <main>
+                                            <React.Suspense
+                                                fallback={<Spinner />}
+                                            >
+                                                <CharacterListComponent
+                                                    characters={filteredList}
+                                                />
+                                                <Pagination
+                                                    totalRecords={20}
+                                                    pageNeighbours={1}
+                                                    onPageChanged={
+                                                        this.onPageChanged
                                                     }
                                                 />
-                                            </aside>
-                                        </div>
-                                        <div className="characters-panel">
-                                            <main>
-                                                <React.Suspense
-                                                    fallback={<Spinner />}
-                                                >
-                                                    <CharacterListComponent
-                                                        characters={
-                                                            filteredList
-                                                        }
-                                                    />
-                                                    <Pagination
-                                                        totalRecords={20}
-                                                        pageNeighbours={1}
-                                                        onPageChanged={
-                                                            this.onPageChanged
-                                                        }
-                                                    />
-                                                </React.Suspense>
-                                            </main>
-                                        </div>
+                                            </React.Suspense>
+                                        </main>
                                     </div>
                                 </div>
-                            </Fragment>
+                            </div>
                         )}
                     />
 

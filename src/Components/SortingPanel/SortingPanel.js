@@ -1,69 +1,83 @@
 import React, { Component } from "react";
+import "./SortingPanel.scss";
 
 export class SortingPanel extends Component {
     render() {
         return (
             <div className="sorting-panel-wrap">
-                <fieldset>
-                    <legend>Filter by gender</legend>
-                    <label htmlFor="gender-all-sort">
-                        All
+                <fieldset className="sorting-fieldset">
+                    <legend className="sorting-legend">Filter by gender</legend>
+                    <label htmlFor="gender-all-sort" className="sorting-label">
                         <input
                             type="radio"
                             name="gender"
                             className="filter-input"
                             id="gender-all-sort"
                         />
+                        <span className="sorting-label-text">All</span>
                     </label>
-                    <label htmlFor="gender-male-sort">
-                        Male
+                    <label htmlFor="gender-male-sort" className="sorting-label">
                         <input
                             type="radio"
                             name="gender"
                             className="filter-input"
                             id="gender-male-sort"
                         />
+                        <span className="sorting-label-text">Male</span>
                     </label>
-                    <label htmlFor="gender-female-sort">
-                        Female
+                    <label
+                        htmlFor="gender-female-sort"
+                        className="sorting-label"
+                    >
                         <input
                             type="radio"
                             name="gender"
                             className="filter-input"
                             id="gender-female-sort"
                         />
+                        <span className="sorting-label-text">Female</span>
                     </label>
-                    <label htmlFor="gender-unknown-sort">
-                        Unknown
+                    <label
+                        htmlFor="gender-unknown-sort"
+                        className="sorting-label"
+                    >
                         <input
                             type="radio"
                             name="gender"
                             className="filter-input"
                             id="gender-unknown-sort"
                         />
+                        <span className="sorting-label-text">Unknown</span>
                     </label>
                 </fieldset>
-                <fieldset>
-                    <legend>Filter by name</legend>
-                    <label htmlFor="name-asc">
-                        Aa-Zz
+                <fieldset className="sorting-fieldset">
+                    <legend className="sorting-legend">Filter by name</legend>
+                    <label htmlFor="name-asc" className="sorting-label">
                         <input
                             type="radio"
                             name="sorting"
                             className="filter-input"
                             id="name-asc"
                         />
+                        <span className="sorting-label-text">Aa-Zz</span>
                     </label>
-                    <label htmlFor="name-desc">
-                        Zz-Aa
+                    <label htmlFor="name-desc" className="sorting-label">
                         <input
                             type="radio"
                             name="sorting"
                             className="filter-input"
                             id="name-desc"
                         />
+                        <span className="sorting-label-text">Zz-Aa</span>
                     </label>
                 </fieldset>
+                <button
+                    className="reset-filter-button"
+                    type="button"
+                    onClick={this.props.resetHandler}
+                >
+                    Reset filter
+                </button>
             </div>
         );
     }

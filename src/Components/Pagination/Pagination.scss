@@ -15,10 +15,11 @@
         border-radius: 50%;
         color: $customDark;
         transition: all 0.3s ease-in;
-        border: 1px solid transparent;
+        border: 2px solid transparent;
 
         &:hover {
-            background-color: $customYellow;
+            color: #fff;
+            background-color: $customDark;
         }
     }
     .page-item {
@@ -28,8 +29,9 @@
         }
         &.active {
             .page-link {
-                background-color: $customYellow;
-                border: 1px solid $customDark;
+                background-color: $customDark;
+                border: 2px solid $customYellow;
+                color: #fff;
             }
         }
     }
