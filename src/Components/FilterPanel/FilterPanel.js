@@ -9,6 +9,7 @@ export class FilterPanel extends Component {
                 className="filter-form"
                 onSubmit={this.props.handleSearch}
                 onChange={this.props.handleFilter}
+                ref={this.props.refProp}
             >
                 <SearchBar />
                 <SortingPanel resetHandler={this.props.handleResetFilter} />

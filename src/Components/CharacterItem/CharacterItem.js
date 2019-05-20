@@ -3,15 +3,7 @@ import "./CharacterItem.scss";
 
 export class CharacterItem extends Component {
     render() {
-        const {
-            id,
-            name,
-            species,
-            image,
-            gender,
-            origin,
-            status
-        } = this.props.data;
+        const { name, image, gender } = this.props.data;
 
         return (
             <div className="character-item">

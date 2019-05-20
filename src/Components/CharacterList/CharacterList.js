@@ -1,8 +1,5 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import CharacterItem from "../CharacterItem/CharacterItem";
-// import { CHARACTERSCOUNT } from "../../constants";
-// import Pagination from "../Pagination/Pagination";
-// import { getCharactersList } from "../../api";
 import "./CharacterList.scss";
 
 export class CharacterList extends Component {
@@ -11,15 +8,7 @@ export class CharacterList extends Component {
             return <CharacterItem key={character.id} data={character} />;
         });
 
-        return (
-            <Fragment>
-                <div className="characters-wrap row">{characterList}</div>
-                {/* <Pagination
-                    items={this.props.characters}
-                    onChangePage={this.onChangePage}
-                /> */}
-            </Fragment>
-        );
+        return <div className="characters-wrap row">{characterList}</div>;
     }
 }
 

@@ -14,6 +14,8 @@ class App extends Component {
         super();
         this.characterListCopy = [];
         this.onPageChanged = this.onPageChanged.bind(this);
+        this.performResetFilter = this.performResetFilter.bind(this);
+        this.formRef = React.createRef();
     }
 
     state = {
@@ -81,6 +83,7 @@ class App extends Component {
             sortingNameParam: "",
             gender: ""
         });
+        this.formRef.current.reset();
     };
 
     async onPageChanged(data) {
@@ -144,6 +147,7 @@ class App extends Component {
                                                 handleResetFilter={
                                                     this.performResetFilter
                                                 }
+                                                refProp={this.formRef}
                                             />
                                         </aside>
                                     </div>
