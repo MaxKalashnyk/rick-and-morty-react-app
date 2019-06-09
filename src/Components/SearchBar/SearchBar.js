@@ -21,6 +21,7 @@ export class SearchBar extends Component {
                     className="search-input"
                     onChange={this.searchCharacter}
                     name="search"
+                    placeholder="Type smth..."
                 />
                 <button
                     className="search-button"

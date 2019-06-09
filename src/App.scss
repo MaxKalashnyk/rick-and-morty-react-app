@@ -5,6 +5,24 @@
     --section-color: #54a0ff;
     --border-color: #c8d6e5;
     --custom-red: #ff6b6b;
+    --main-bg: #dfe4ea;
+    --base-color: #ced4da;
+    --light-background: lighten(desaturate($base-color, 50%), 12.5%);
+    --customYellow: rgb(255, 152, 0);
+    --customDark: rgb(32, 35, 41);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Neucha", cursive !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
 }
 
 /* basic reset */
@@ -28,7 +46,7 @@ body {
     font-style: normal;
     color: var(--text-color);
     min-height: 100vh;
-    background-color: #dfe4ea;
+    background-color: var(--main-bg);
 }
 
 ul {

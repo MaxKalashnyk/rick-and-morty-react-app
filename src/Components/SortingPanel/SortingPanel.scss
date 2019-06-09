@@ -1,8 +1,29 @@
 @import "../../scss/mixins";
-@import "../../scss/variables";
 
 .search-wrap {
     margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    height: 2em;
+    flex-grow: 1;
+    font-size: 16px;
+    margin-right: 1em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--customDark);
+    background: transparent;
+    transition: border-color 0.3s ease-in;
+    font-family: "Neucha", cursive;
+    &:focus {
+        border-bottom: 1px solid var(--customYellow);
+    }
+}
+
+.search-button {
+    @include button();
 }
 
 .sorting-fieldset {
@@ -40,7 +61,7 @@
     width: 1.5em;
     height: 1.5em;
     margin-right: 1em;
-    border: 1px solid $customYellow;
+    border: 1px solid var(--customYellow);
     border-radius: 2px;
     transition: border-color 0.3s ease-in;
 
@@ -58,7 +79,7 @@
 }
 
 .filter-input:checked + .sorting-label-text {
-    background-color: $customYellow;
+    background-color: var(--customYellow);
 }
 
 .filter-input:checked + .sorting-label-text:before {
@@ -74,16 +95,5 @@
 }
 
 .reset-filter-button {
-    cursor: pointer;
-    border: 2px solid $customYellow;
-    border-radius: 8px;
-    background-color: $customDark;
-    color: #fff;
-    font-size: 16px;
-    padding: 0.5em 1em;
-    font-family: inherit;
-    transition: background-color 0.3s ease-in;
-    &:hover {
-        background-color: rgba(32, 35, 41, 0.75);
-    }
+    @include button();
 }

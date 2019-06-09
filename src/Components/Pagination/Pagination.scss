@@ -1,5 +1,3 @@
-@import "../../scss/variables";
-
 .pagination {
     display: flex;
     justify-content: center;
@@ -13,13 +11,13 @@
         width: 25px;
         height: 25px;
         border-radius: 50%;
-        color: $customDark;
+        color: var(--customDark);
         transition: all 0.3s ease-in;
         border: 2px solid transparent;
 
         &:hover {
             color: #fff;
-            background-color: $customDark;
+            background-color: var(--customDark);
         }
     }
     .page-item {
@@ -29,8 +27,8 @@
         }
         &.active {
             .page-link {
-                background-color: $customDark;
-                border: 2px solid $customYellow;
+                background-color: var(--customDark);
+                border: 2px solid var(--customYellow);
                 color: #fff;
             }
         }
