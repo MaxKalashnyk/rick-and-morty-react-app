@@ -136,7 +136,7 @@ class App extends Component {
                             <div className="container main-content">
                                 <div className="row">
                                     <div className="filter-panel">
-                                        <aside>
+                                        <aside className="aside">
                                             <FilterPanel
                                                 handleSearch={
                                                     this.performSearch
