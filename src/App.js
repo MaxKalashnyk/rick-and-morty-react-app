@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import FilterPanel from "./Components/FilterPanel/FilterPanel";
 import Spinner from "./Components/Spinner/Spinner";
