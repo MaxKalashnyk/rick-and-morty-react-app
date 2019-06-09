@@ -14,7 +14,8 @@ export class SortingPanel extends Component {
                             className="filter-input"
                             id="gender-all-sort"
                         />
-                        <span className="sorting-label-text">All</span>
+                        <span className="sorting-label-text" />
+                        All
                     </label>
                     <label htmlFor="gender-male-sort" className="sorting-label">
                         <input
@@ -23,7 +24,8 @@ export class SortingPanel extends Component {
                             className="filter-input"
                             id="gender-male-sort"
                         />
-                        <span className="sorting-label-text">Male</span>
+                        <span className="sorting-label-text" />
+                        Male
                     </label>
                     <label
                         htmlFor="gender-female-sort"
@@ -35,7 +37,8 @@ export class SortingPanel extends Component {
                             className="filter-input"
                             id="gender-female-sort"
                         />
-                        <span className="sorting-label-text">Female</span>
+                        <span className="sorting-label-text" />
+                        Female
                     </label>
                     <label
                         htmlFor="gender-unknown-sort"
@@ -47,7 +50,8 @@ export class SortingPanel extends Component {
                             className="filter-input"
                             id="gender-unknown-sort"
                         />
-                        <span className="sorting-label-text">Unknown</span>
+                        <span className="sorting-label-text" />
+                        Unknown
                     </label>
                 </fieldset>
                 <fieldset className="sorting-fieldset">
@@ -59,7 +63,8 @@ export class SortingPanel extends Component {
                             className="filter-input"
                             id="name-asc"
                         />
-                        <span className="sorting-label-text">Aa-Zz</span>
+                        <span className="sorting-label-text" />
+                        Aa-Zz
                     </label>
                     <label htmlFor="name-desc" className="sorting-label">
                         <input
@@ -68,7 +73,8 @@ export class SortingPanel extends Component {
                             className="filter-input"
                             id="name-desc"
                         />
-                        <span className="sorting-label-text">Zz-Aa</span>
+                        <span className="sorting-label-text" />
+                        Zz-Aa
                     </label>
                 </fieldset>
                 <button

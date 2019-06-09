@@ -20,6 +20,7 @@
 .sorting-label {
     display: flex;
     margin-bottom: 0.5em;
+    font-size: 16px;
     &:last-child {
         margin-bottom: 0;
     }
@@ -35,24 +36,40 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    font-size: 16px;
+    justify-content: center;
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 1em;
+    border: 1px solid $customYellow;
+    border-radius: 2px;
+    transition: border-color 0.3s ease-in;
+
     &:before {
         content: "";
-        display: inline-block;
-        margin-right: 1em;
-        width: 1.5em;
-        height: 1.5em;
-        border: 1px solid $customYellow;
-        border-radius: 2px;
-        transition: border-color 0.3s ease-in;
+        width: 5px;
+        height: 11px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        opacity: 0;
     }
 }
 
-.filter-input:focus + .sorting-label-text:before {
+.filter-input:checked + .sorting-label-text {
+    background-color: $customYellow;
+}
+
+.filter-input:checked + .sorting-label-text:before {
+    opacity: 1;
+}
+
+.filter-input:focus + .sorting-label-text {
     outline: -webkit-focus-ring-color auto 5px;
 }
 
-.filter-input:-moz-focusring + .sorting-label-text:before {
+.filter-input:-moz-focusring + .sorting-label-text {
     outline: 1px dotted;
 }
 
