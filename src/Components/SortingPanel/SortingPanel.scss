@@ -48,12 +48,6 @@
     }
 }
 
-.filter-input:checked + .sorting-label-text:before {
-    background: url("/../images/check-box.svg") center no-repeat;
-    background-size: 100%;
-    border-color: transparent;
-}
-
 .filter-input:focus + .sorting-label-text:before {
     outline: -webkit-focus-ring-color auto 5px;
 }
