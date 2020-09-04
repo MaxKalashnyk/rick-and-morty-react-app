@@ -5,7 +5,7 @@
     "homepage": "https://kalash14.github.io/rick-and-morty-react-app/",
     "dependencies": {
         "gh-pages": "^2.0.1",
-        "node-sass": "^4.12.0",
+        "node-sass": "^4.13.1",
         "react": "^16.8.6",
         "react-dom": "^16.8.6",
         "react-router-dom": "^5.0.0",
